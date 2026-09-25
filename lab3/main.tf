@@ -99,7 +99,6 @@ resource "azurerm_linux_virtual_machine" "vm" {
     type = "ssh"
     host = self.public_ip_address
     user = "azureuser"
-    password = "student"
     private_key = file("C:/Users/Student/.ssh/azure_lab_rsa")
     timeout = "10m"
   }
